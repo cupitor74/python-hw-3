@@ -35,19 +35,17 @@ def spiral(matrix):
         for i in range(bottom_index, top_index - 1, -1):
            list.append(matrix[i][left_index]) 
         left_index = left_index + 1
-    print(list)
+    return list
  
  
-matrix = [
-       [1,2,3],
-       [4,5,6],
-       [7,8,9]
-    ]
-matrix1 = [
-       [1,2,3,4],
-       [5,6,7,8],
-       [9,10,11,12]
-    ]
+matrix = [[1, 2, 3, 4],
+               [5, 6, 7, 8],
+               [9,10,11,12]]
+matrix1 = [[1, 2, 3, 4, 5, 6],
+            [7, 8, 9,10,11,12],
+            [13,14,15,16,17,18],
+            [19,20,21,22,23,24],
+            [25,26,27,28,29,30]]
 
-spiral(matrix)
-spiral(matrix1)
+print(spiral(matrix))
+print(spiral(matrix1))
